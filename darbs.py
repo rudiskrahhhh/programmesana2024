@@ -1,14 +1,14 @@
-from tests import Sieviete, Cilveks
+from cilveks import Sieviete, Cilveks
 
 cilveku_saraksts = []
 
 for i in range(20):
-    cilveku_saraksts.append(Sieviete("Katrina", "GINGA", i))
+    cilveku_saraksts.append(Sieviete("Anna","blonda", i))
 
 for sieviete in cilveku_saraksts:
-    if sieviete.age % 2 == 0:
+    if sieviete.vecums % 2 == 0:
         sieviete.mainit_dzimumu()
 
-print ("---------------------")
+print ("-------------------")
 for sieviete in cilveku_saraksts:
-    sieviete.bazars()
+    sieviete.info()
